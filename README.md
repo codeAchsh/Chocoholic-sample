@@ -1,5 +1,5 @@
 # Chocoholic-sample
-![Chocoholic HOME](./assets/images/Chocoholic-HOME.png)
+![Chocoholic HOME](./assets/images/Chocoholic-HOME.jpg)
 
 I have tried to structure the portfolio differently than in the past. 
 Common design elements used on multiple pages were grouped together in a common CSS file. 
