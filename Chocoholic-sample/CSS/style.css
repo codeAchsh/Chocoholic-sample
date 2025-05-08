@@ -1,0 +1,325 @@
+/* READ common.css of font-style*/
+/* READ common.css of NAV part*/
+/* READ common.css of HAMBURGER MENU part*/
+/* READ common.css of HEADER part*/
+
+
+/* INFO */
+.info{
+    width: 70%;
+    height: 100px;
+    background-color: #fffff0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 650px;
+    left: 15%;
+    z-index: 99;
+}
+.info .info-ico{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 0 3em;
+}
+.info .info-ico img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    top: 1.5em;
+    margin-left: -30px;
+}
+.info .info-ico p{
+    margin: 0 0 0 2em;
+    font-size: 14px;
+}
+/* CHOCO WRAPPER */
+.choco-wrapper{
+    width: 100%;
+    height: 950px;
+    background-color: #D2A972; 
+    opacity: 80%;
+    position: relative;
+    top: 700px;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+.choco-inner{
+    width: 70%;
+    height: 750px;
+    position: relative;
+    top: 15%;
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between;
+}
+.choco-card{
+    width: 22%; 
+    height: 300px;
+    position: relative; 
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.choco-card .full-img{
+    width: 100%;
+    height: 100%;
+    /* 画像比率を統一 */    
+    aspect-ratio: 4/3; 
+    object-fit: cover;
+    overflow: hidden;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* opacityの代わりに filter を使用 */
+    filter: opacity(80%);
+}
+.choco-card .choco-img{
+    width: 100%;
+    height: 76%;
+    object-fit: cover;
+    top: 0;
+}
+.choco-card .text{
+    min-width: 100%;
+    height: auto;
+    min-height: 70px;
+    background-color: #fffff0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 225px;
+}
+.choco-card .full-p{
+    width: 60%;
+    top: 30px;
+    font-family: "Baloo Chettan 2", sans-serif;
+    font-weight: 600;
+    color: #fffff0;
+    display: flex;
+    flex-wrap: wrap; 
+    position: relative;
+    text-align: center;
+    margin-left: 22%;
+}
+.choco-card .full-a{
+    position: absolute;
+    top: 80px;
+    color: #fffff0;
+    text-decoration: none;
+    position: relative;
+    text-align: center;
+}
+.choco-card .text p,
+.choco-card .text a{
+    font-family: "Baloo Chettan 2", sans-serif;
+    font-weight: 600;
+    margin: 0;
+}
+/* CHOCO BOTTOM */
+.choco-bottom{
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    /* top: 350px; */
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.choco-bottom h2{
+    font-family: "Baloo Chettan 2", sans-serif;
+    font-weight: 600;
+    color: #fffff0;
+    font-size: 30px;
+}
+.footer-top{
+    position: absolute;
+    margin-top: 960px;
+}
+@media(max-width: 768px){
+    .main{
+        height: 2300px;
+    }
+    .choco-bottom{
+        top: 2060px;
+    }
+    .choco-bottom h2{
+        position: absolute;
+        top: 35%;
+    }
+    .footer-top{
+        top: 1350px;
+    }
+
+}
+
+@media(max-width: 480px){
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    html, body{
+        margin: 0;
+        padding: 0;
+    }
+    .nav-top{
+        width: 100vw;
+    } 
+    .nav-wrapper,
+    .main{
+        width: 100vw;
+        margin: 0 ;
+        padding: 0 ;
+    }
+    .main{
+        height: 2300px;
+        padding: 0;
+        top: 0;
+        position: relative;
+    }
+    .header{
+        position: relative;
+        text-align: center;
+    }
+    .header h2{
+        position: absolute;
+        font-size: 30px;
+        left: -5%;
+    }
+    .header a,
+    .header button{
+        position: absolute;
+        left: 35%;
+    }
+    .main img{
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .info-ico {
+        float: none !important;
+        position: static !important;
+        clear: both !important;
+    }
+
+    
+    .info,
+    .choco-wrapper,
+    .choco-inner,
+    .choco-card{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .info {
+        height: auto;
+        display: flex;
+        flex-direction: column; 
+        align-items: flex-start;
+        padding: 0;
+        padding-left: 15px;
+        margin-top: -30px;
+      }
+    
+    .info-ico {
+    all: unset;
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    gap: 1em;
+    width: 100%;
+    }
+    
+    .info-ico img {
+    all: unset;
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+    display: block;
+    }
+
+    .info-ico p {
+    all: unset;
+    margin: 0;
+    font-size: 14px;
+    }
+    .choco-wrapper{
+        width: 100%;
+    }
+    .choco-inner{
+        display: grid;
+        grid-template-columns: repeat(2, 40%) !important;
+        justify-content: center !important;
+        gap: 1em !important;
+    }
+    .choco-card{
+        width: 80% !important;
+        padding: 0;
+        margin: 0;
+    }
+    .choco-bottom h2{
+        font-size: 16px !important;
+        margin: 2em auto;
+    }
+    .footer-top{
+        height: 60vh !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: auto;
+        top: 220vh;
+    }
+    .footer-left,
+    .footer-middle,
+    .footer-right{
+        width: 100%;
+        margin: 0;
+        position: relative;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+    .footer-left{
+        left: auto;
+    }
+    .footer iframe{
+        margin: 0 auto;
+        display: block;
+    }
+    .footer-middle{
+        left: auto;
+    }
+    .middle-row{
+        width: 70%;
+        margin-left: 30%;
+    }
+    
+    .footer-row{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }    
+    .footer-right{
+        left: auto;
+    }
+    .footer-right p{
+        width: 70%;
+        margin-left: 15%;
+    }
+    .footer{
+        top: 60vh;
+    }
+}
