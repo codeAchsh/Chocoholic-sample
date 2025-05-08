@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Baloo+Chettan+2:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* NAV */
+.nav-wrapper{
+    width: 100%;
+    height: 150px;
+    padding: 10px 0;
+    width: 100%;
+    background-color: #fffff0;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 5%;    
+    z-index: 9999;
+    }
+.nav-top{
+    width: 100%;
+    height: 50px;
+    background-color: #371B02;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+.container{
+    width: 80%; 
+    padding: 10px 30px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-left{
+    display: flex;
+    align-items: center;
+}
+.nav-right{
+    display: flex;
+    align-items: center;
+    height: 110px;
+    z-index: 1000;
+    overflow: visible;
+}
+/* HAMBURGER MENU  */
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    top: 18px;
+    right: 20px;
+}
+.hamburger-menu .bar {
+    width: 25px;
+    height: 3px;
+    margin: 5px 20px;
+    transition: 0.4s;
+    border: #000000 solid 3px;
+}
+.clear{
+    clear: both;
+}
+.nav-left h1{
+    font-size: 36px;
+    font-family: "Agbalumo", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: -20px;
+}
+.nav-right ul{
+    display: flex;
+    position: relative;
+    z-index: 10;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+#nav-right-items.show {
+    display: flex;
+}
+.nav-right ul li{
+    list-style: none;
+    padding: 20px;
+    min-height: 40px;
+}
+.nav-right ul li a {
+    position: relative;
+    display: block;
+    color: #000;
+    font-weight: 600;
+    text-decoration: none ;  
+    /* クリックやホバーを有効にする */
+    pointer-events: auto;    
+}
+.nav-right ul li a:hover {
+    color: red;
+    cursor: pointer;
+}
+
+/* SET COLOR OF EACH TOP PAGE */
+.nav-right ul .home-link{
+    color: #ba0606;
+}
+.nav-right ul .shop-link{
+    color: #ba0606;
+}
+.nav-right ul .bakery-link{
+    color: #ba0606;
+}
+.nav-right ul .about-link{
+    color: #ba0606;
+}
+.nav-right ul .contact-link{
+    color: #ba0606;
+}
+  
+/* MAIN */
+.main{
+    position: relative;
+    width: 100%;
+}
+.main img{
+    width: 100%;
+    height: 1800px;
+    object-fit: cover; 
+    opacity: 80%;
+    position: absolute;
+    top: 180px;
+}
+/* HEADER */
+.header{
+    width: 100%;
+    position: relative;
+    top: 180px;
+}
+.header h2{
+    width: 35%;
+    word-wrap: break-word;
+    text-align: center;
+    font-size: 36px;
+    font-family: "Agbalumo", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: #fffff0;
+    position: absolute;
+    top: 30px;
+    margin: 100px auto 30px 35%;
+}
+.header button{
+    width: 150px;
+    height: 40px;
+    background-color: #A67430;
+    color: #fffff0;
+    position: absolute;
+    text-decoration: none;
+    top:300px;
+    left: 47%;
+}
+.header button:hover{
+    background-color: #fffff0;
+    color: #A67430;
+    cursor: pointer;
+}
+
+/* SET for EACH FILE HERE */
+
+
+/* CHOCO BOTTOM */
+.choco-bottom{
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    top: 1650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.choco-bottom h2{
+    font-family: "Baloo Chettan 2", sans-serif;
+    font-weight: 600;
+    color: #fffff0;
+    font-size: 30px;
+}
+
+/* FOOTER */
+.footer-top{
+    width: 100%;
+    height: 250px;
+    background-color: #371B02;
+    position: relative;
+    top: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.footer-top h3 {
+    font-family: "Agbalumo", system-ui;
+    font-weight: 400;
+    font-size: 30px;
+    color: #DFB781;
+}
+.footer-top h4,
+.footer-top p{
+    color: #fffff0;
+    margin-top: 10px;
+}
+.footer-left{
+    width: 18%;
+    margin-top: 50px;
+    text-align: left;
+    position: absolute;
+    left: 8%;
+}
+.footer-middle{
+    width: 25%;;
+    margin-top: 50px;
+    text-align: left;
+    position: absolute;
+    left: 30%;
+}
+.middle-row{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    justify-content: left;
+    /* divの間に20pxの間隔を追加 */
+    gap: 40px; 
+}
+.footer-right{
+    width: 30%;
+    margin-top: 50px;
+    text-align: left;
+    position: absolute;
+    left: 60%;
+}
+.footer-middle h4:hover,
+.footer-right h4:hover{
+    color: #90BB84;
+}
+.wrap{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+}
+.footer{
+    width: 100%;
+    height: 80px;
+    background-color: #1E1004;
+    position: absolute;
+    top: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer p{
+    font-size: 20px;
+    color: #fffff0
+}
