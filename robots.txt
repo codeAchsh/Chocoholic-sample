@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://codeachsh.github.io/Chocoholic-sample/sitemap.xml
